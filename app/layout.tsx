@@ -11,7 +11,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Sandra Almanza — Community, ops & emerging tech",
+  title: "sandra almanza web page",
   description:
     "Community operations for technical ecosystems — onboarding, documentation, and content that keeps people engaged.",
 };
