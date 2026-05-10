@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lavishly_Yours, Lato } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 
 const lato = Lato({
@@ -7,13 +7,6 @@ const lato = Lato({
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-lato",
-  display: "swap",
-});
-
-const lavishlyYours = Lavishly_Yours({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-lavishly-yours",
   display: "swap",
 });
 
@@ -29,10 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${lato.variable} ${lavishlyYours.variable} h-full scroll-smooth`}
-    >
+    <html lang="en" className={`${lato.variable} h-full scroll-smooth`}>
       <body className="min-h-full font-sans antialiased">{children}</body>
     </html>
   );
